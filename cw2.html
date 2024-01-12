@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+    <head>
+        <title>Ćwiczenie 2 - formularz wystylizowany</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Paweł Pawiłojć 49536">
+        <style>
+            body {
+                line-height: 2.5em;
+            }
+
+            h1 {
+                color: darkgray;
+                text-shadow: 2px 2px black;
+                border: 3px solid darkgray;
+                text-align: center;
+            }
+
+            div {
+                max-width: 50%;
+            }
+
+            label {
+                font-weight: bold;
+            }
+
+            input[type="text"] {
+                background-color: yellowgreen;
+                border-color: lightcoral;
+                border-radius: 4px;
+            }
+
+
+            select,
+            option {
+                background-color: yellowgreen;
+                font-style: italic;
+            }
+
+            div.table {
+                display: table;
+
+            }
+
+            div.tr {
+                display: table-row;
+            }
+
+            span.td {
+                display: table-cell;
+                vertical-align: middle;
+                padding-right: 2em;
+
+            }
+
+            input[type="reset"],
+            input[type="submit"] {
+                background-color: seagreen;
+                color: white;
+                font-family: 'Arial Narrow', Arial, sans-serif;
+                font-weight: lighter;
+                padding: 1.5em;
+                margin: 1em;
+                width: 8em;
+                border-radius: 5px;
+                border: 3px solid darkgray;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>Ankieta dotycząca wyboru tematu kursu</h1>
+        </div>
+
+        <form action="cw1.html">
+            <div class="table">
+                <div class="tr">
+                    <span class="td">
+                        <label for="firstname">Imię:</label>
+                    </span>
+                    <span class="td">
+                        <input type="text" name="firstname" id="firstname" required>
+                    </span>
+                </div>
+                <div class="tr">
+                    <span class="td">
+                        <label for="lastname">Nazwisko:</label></span>
+                    <span class="td"><input type="text" name="lastname" id="lastname" required>
+                    </span>
+                </div>
+                <div class="tr">
+                    <span class="td">
+                        <label for="title">Tytuł kursu:</label></span>
+                    <span class="td"><select id="title" name="title">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="js">Javascript</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+
+            </div>
+        </form>
+
+
+    </body>
+
+</html>
