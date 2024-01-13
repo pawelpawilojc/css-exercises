@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+    <head>
+        <title>Ćwiczenie 3 - nasza klasa</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Paweł Pawiłojć 49536">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            div.container {
+                display: flex;
+                width: 100%;
+
+            }
+
+            div.cell {
+                flex: 1;
+            }
+
+            div.news {
+                max-width: 30%;
+                min-height: 40em;
+                background-color: coral;
+            }
+
+            div.content {
+                background-color: orange;
+            }
+
+            td {
+                border: 2px solid black;
+                padding: 2.5em;
+            }
+
+            img {
+                margin-left: 1em;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            footer {
+                background-color: crimson;
+                font-size: 1.5em;
+                color: white;
+                text-align: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="cell news">
+                <h2>Aktualności</h2>
+                <h3>Co robimy?</h3>
+                <ol>
+                    <li>Pomagamy w nauce</li>
+                    <li>Informujemy o prawach ucznia</li>
+                    <li>Prowadzimy finanse klasy</li>
+                </ol>
+                <h3>Skład Rady:</h3>
+                <table>
+                    <tr>
+                        <td rowspan="3">Jan Abacki<br>Przewodniczący</td>
+                        <td>Anna Abacka</td>
+                    </tr>
+                    <tr>
+                        <td>Anna Cabacka</td>
+                    </tr>
+                    <tr>
+                        <td>Krzysztof Nowak</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cell content">
+                <h2>Nasza Klasa</h2>
+                <img src="classroom.jpg" alt="classroom" width="60%">
+                <!-- Obraz <a href="https://pixabay.com/pl/users/wokandapix-614097/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2093744"> WOKANDAPIX</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2093744"> Pixabay</a>-->
+            </div>
+        </div>
+        <footer>
+            Autor strony: Jan Abacki
+        </footer>
+
+
+
+    </body>
+
+</html>
